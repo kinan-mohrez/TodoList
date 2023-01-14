@@ -1,0 +1,20 @@
+<div class="card shadow" *ngIf="viewList">
+  <h5 class="card-header">Todo List</h5>
+  <div class="card-body">
+    <ul
+      class="badge badge-pill badge-success"
+      *ngFor="let todo of todoService.todoList"
+    >
+      <app-todo [todoInput]="todo"></app-todo>
+    </ul>
+  </div>
+</div>
+
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-light">Light</span>
+<span class="badge badge-pill badge-dark">Dark</span>
