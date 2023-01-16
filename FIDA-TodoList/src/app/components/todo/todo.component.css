@@ -1,0 +1,13 @@
+.btn {
+  border-radius: 50%;
+}
+
+.mat-chip {
+  background-color: #86BC25;
+  height: 60px;
+}
+
+.mx-3 {
+  color: white;
+  font-size: smaller;
+}

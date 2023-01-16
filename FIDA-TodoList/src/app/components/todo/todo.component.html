@@ -1,4 +1,4 @@
-<li class="list-group-item">
+<!-- <li class="list-group-item">
   <div class="form-check d-inline">
     <input
       type="checkbox"
@@ -17,4 +17,23 @@
       x
     </button>
   </div>
-</li>
+</li> -->
+
+<mat-chip-list>
+  <mat-chip [style.background-color]="chipColor">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      id="complete"
+      (change)="onChange(todoInput)"
+      [disabled]="completed"
+      [checked]="completed"
+    />
+
+    {{ todoInput.title }}
+    <span class="mx-3">{{ todoInput.date | date }} </span>
+    <button class="btn btn-warning btn-sm mx-3" (click)="deleteTodo(todoInput)">
+      x
+    </button>
+  </mat-chip>
+</mat-chip-list>

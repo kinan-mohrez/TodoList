@@ -15,16 +15,16 @@ export class TodoListComponent implements OnInit {
   viewList: boolean = true;
 
    ngOnInit(): void {
-    this.route.url.subscribe(data => {
+    // this.route.url.subscribe(data => {
 
-      if (data[0].path == 'list') {
-        this.viewList = true;
-      }
-      else {
-        this.viewList = false;
+    //   if (data[0].path == 'list') {
+    //     this.viewList = true;
+    //   }
+    //   else {
+    //     this.viewList = false;
 
-      }
-    })
+    //   }
+    // })
   }
 
 }

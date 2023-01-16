@@ -1,8 +1,9 @@
 <div class="card shadow" *ngIf="viewList">
   <h5 class="card-header">Todo List</h5>
-  <div class="card-body">
+
+  <div class="card-body row justify-content-md-center">
     <ul
-      class="badge badge-pill badge-success"
+      class="badge badge-pill col-sm-12 col-md-4 col-xl-2"
       *ngFor="let todo of todoService.todoList"
     >
       <app-todo [todoInput]="todo"></app-todo>
@@ -18,3 +19,12 @@
 <span class="badge badge-pill badge-info">Info</span>
 <span class="badge badge-pill badge-light">Light</span>
 <span class="badge badge-pill badge-dark">Dark</span>
+
+<mat-chip-list aria-label="Fish selection">
+  <mat-chip>One fish</mat-chip>
+  <mat-chip>Two fish</mat-chip>
+  <mat-chip color="accent" selected>Accent fish</mat-chip>
+  <mat-chip color="warn">Warn fish</mat-chip>
+</mat-chip-list>
+
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>

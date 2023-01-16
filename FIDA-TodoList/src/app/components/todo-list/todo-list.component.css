@@ -1,4 +1,8 @@
 .card {
   height: 800px !important;
-  background-color: red;
+  background-color: #3B71CA;
+}
+
+.badge-pill {
+  height: 60px;
 }
