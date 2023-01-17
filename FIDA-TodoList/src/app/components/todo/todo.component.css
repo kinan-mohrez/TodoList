@@ -1,13 +1,17 @@
 .btn {
-  border-radius: 50%;
+ width: fit-content;
+ border-radius: 50%;
 }
+
 
 .mat-chip {
   background-color: #86BC25;
   height: 60px;
 }
 
-.mx-3 {
+.date {
   color: white;
-  font-size: smaller;
+  font-size: 10px;
 }
+
+

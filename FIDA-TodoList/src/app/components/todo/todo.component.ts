@@ -21,20 +21,17 @@ export class TodoComponent implements OnInit {
   constructor(public todoService: TodoService) { }
 
   ngOnInit(): void {
-    if (this.todoInput.isCompleted){
+    if (this.todoInput?.isCompleted){
       this.chipColor = 'gray'
       this.completed = true;
-
-
     }else{
       this.chipColor = '#86BC25'
     }
-
   }
 
   onChange(item:Todo) {
-    // console.log(item);
-    this.todoService.compliteTodo(item)
+
+    this.todoService.completeTodo(item)
 
     this.chipColor = 'gray'
     this.completed = true;

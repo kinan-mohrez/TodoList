@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from 'src/app/services/todo.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-todo-list',
@@ -9,22 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TodoListComponent implements OnInit {
 
-  constructor(public todoService: TodoService, public route: ActivatedRoute) { }
+  constructor(public todoService: TodoService) { }
 
 
   viewList: boolean = true;
 
    ngOnInit(): void {
-    // this.route.url.subscribe(data => {
 
-    //   if (data[0].path == 'list') {
-    //     this.viewList = true;
-    //   }
-    //   else {
-    //     this.viewList = false;
-
-    //   }
-    // })
   }
 
 }

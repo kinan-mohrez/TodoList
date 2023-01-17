@@ -11,8 +11,9 @@ export class TodoService {
   constructor(private deletePopup: ToastrService, private AddItemPopup: ToastrService, private compliteItemPopup: ToastrService) {
     if (JSON.parse(localStorage.getItem('TodoListLocalStorage')!) !== null) {
     this.todoList  =  JSON.parse(localStorage.getItem('TodoListLocalStorage')!)
-  }else { this.todoList =
-     [
+      }
+      else
+      { this.todoList =[
     {
       id: 1,
       title: 'Todo One',
@@ -60,7 +61,7 @@ export class TodoService {
   }
 
   // complited todo item
-  compliteTodo (item : Todo) {
+  completeTodo (item : Todo) {
     item.isCompleted = true;
     console.log(item.isCompleted)
     this.compliteItemPopup.info(` ${item.title} Todo succesfully completed!`);

@@ -1,18 +1,26 @@
-<nav class="container navbar navbar-expand-lg navbar-light bg-light mb-5">
-  <span class="navbar-brand">My TODO List</span>
-  <div class="navbar-nav">
-    <!-- <a class="nav-item nav-link" href="#">LIST</a>
-        <a class="nav-item nav-link" href="#">ADD</a> -->
+<nav
+  class="container navbar navbar-expand-lg navbar-dark bg-primary mb-2 col-10"
+>
+  <a class="navbar-brand" href="#">
+    <img
+      src="../assets/images/FIDA.png"
+      width="130"
+      height="50"
+      class=""
+      alt="Fida Todo list"
+    />
+  </a>
+  <div class="navbar-nav col-md-6 col-sm-12">
     <a
-      class="nav-item nav-link"
+      class="nav-item nav-link text"
       routerLink="/add"
-      routerLinkActive="text-danger"
+      routerLinkActive="activeRoute"
       >ADD</a
     >
     <a
-      class="nav-item nav-link"
+      class="nav-item nav-link text"
       routerLink="/list"
-      routerLinkActive="text-danger"
+      routerLinkActive="activeRoute"
       >LIST</a
     >
   </div>

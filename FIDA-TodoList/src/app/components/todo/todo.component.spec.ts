@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ToastrModule } from 'ngx-toastr';
 import { TodoComponent } from './todo.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 describe('TodoComponent', () => {
   let component: TodoComponent;
@@ -8,7 +9,8 @@ describe('TodoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoComponent ]
+      declarations: [ TodoComponent ],
+      imports: [ToastrModule.forRoot(),MatChipsModule],
     })
     .compileComponents();
   });
@@ -21,6 +23,5 @@ describe('TodoComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-
   });
 });

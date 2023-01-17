@@ -1,12 +1,14 @@
-import { TestBed } from '@angular/core/testing';
-
+import { async, TestBed } from '@angular/core/testing';
+import { ToastrModule } from 'ngx-toastr';
 import { TodoService } from './todo.service';
 
 describe('TodoService', () => {
   let service: TodoService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [ToastrModule.forRoot()],
+    });
     service = TestBed.inject(TodoService);
   });
 
@@ -14,4 +16,6 @@ describe('TodoService', () => {
     expect(service).toBeTruthy();
 
   });
+
+
 });
