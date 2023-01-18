@@ -101,9 +101,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "FIDA-TodoList"
+  "defaultProject": "FIDA-TodoList",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

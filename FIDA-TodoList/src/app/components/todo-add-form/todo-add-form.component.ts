@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TodoService } from 'src/app/services/todo.service';
 
 @Component({
@@ -6,18 +6,18 @@ import { TodoService } from 'src/app/services/todo.service';
   templateUrl: './todo-add-form.component.html',
   styleUrls: ['./todo-add-form.component.css']
 })
-export class TodoAddFormComponent implements OnInit {
+export class TodoAddFormComponent  {
 
   todo = '';
 
   constructor(public todoService: TodoService) { }
 
-  ngOnInit(): void {
-  }
+
 
   onSubmit(){
     this.todoService.addTodo(this.todo);
     this.todo = '';
+
   }
 
 }

@@ -81,7 +81,7 @@ export class TodoService {
   // complited todo item
   completeTodo (item : Todo) {
     item.isCompleted = true;
-    console.log(item.isCompleted)
+
     this.Popup.info(` ${item.title} Todo succesfully completed!`);
 
     this.setLocalStorage(this.todoList , this.localStorge_KEY);
